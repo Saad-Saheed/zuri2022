@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PROFILER || Login</title>
+
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="./public/css/register.css">
+
+    <script src="./public/js/index.js" defer></script>
+
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="logo">
+            <!-- <img src="images/clipart999521.png"> -->
+            <span class="c-name"><a href="./index.html">PROFILER</a></span>
+            <span class="btn-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+
+        <nav class="nav hide">
+            <ul>
+                <li><a class="nav-link" href="./index.html">About me</a></li>
+                <li><a class="nav-link" href="./contact.html">Contact Us</a></li>
+
+                <div class="nav-btn">
+                    <ul>
+                        <li class=""><a class="btn cmn-btn" href="./register.html">Register
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a></li>
+                        <li class=""><a class="btn cmn-btn" href="./login.html">Login
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a></li>
+                    </ul>
+                </div>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main-content">
+        
+        <section class="section form-card clearfix row-container">
+
+            <div class="boxes box1" style="background-color: #4b0082;">
+                <div class="text-center">
+                    <h3 class="pe-4">REGISTER</h3>
+                    <p class="pe-3">Create your account for free Now.</p>
+                </div>
+                <!-- <img src="./img/undraw_aircraft2_fbvl.svg" alt="plane" class="my-3 img-fluid"> -->
+                <img src="./public/images/icon_warranty.png" alt="register logo" class="img-fluid">
+            </div>
+
+            <form class="boxes box2" action="" method="post">
+                <h3>REGISTER</h3>
+                <span class="patch"></span>
+
+                <div>
+                    <label class="form-label" for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required>
+                </div>
+
+                <div>
+                    <label class="form-label" for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+
+                <div>
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" name="phone" pattern="0[7-9]{1}[0,1]{1}[0-9]{8}" id="Phone" required>
+                </div>
+
+                <div>
+                    <label class="form-label" for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                        <option value="" class="option" selected disabled>Select</option>
+                        <option value="male" class="option">Male</option>
+                        <option value="female" class="option">Female</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="form-label" for="country">State</label>
+                    <input type="text" name="country" id="country" required>
+                </div>
+
+                <div>
+                    <label class="form-label" for="state">State/Province</label>
+                    <input type="text" name="state" id="state" required>
+                </div>
+
+                <div>
+                    <label class="form-label" for="">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <div>
+                    <label for="c-password">Confirm Password</label>
+                    <input type="password" name="c-password" id="c-password">
+                </div>
+
+                <div class="action">
+
+                    <div class="log">
+                        <span>Already have account? <a href="login.html" style="color:#f1871c;">Login</a></span>
+                        <input type="submit" name="authlogin" value="Register">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;2022 | PROFILER | All Right Reserved
+        </p>
+    </footer>
+
+</body>
+
+</html>

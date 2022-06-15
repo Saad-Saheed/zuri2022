@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        color: #FDF9F8;
+        /* height: 100vh; */
+        font-size: 16px;
+        background-color: #FF7978;
+        font-family: Poppins;
+        background-image: url('./images/bg-intro-desktop.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .main {
+        width: 80%;
+        padding: 8rem 20px;
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .section {
+        /* background-color: black; */
+        /* padding: 20px; */
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .box1 {
+        width: 42%;
+    }
+
+    .box2 {
+        width: 48%;
+        align-self: flex-start;
+    }
+
+    .rounded {
+        border-radius: 0.4rem;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .box2>a {
+        background-color: hsl(248, 32%, 49%);
+        /* #5D54A3; */
+        color: inherit;
+        padding: 15px 10px;
+        font-size: 0.9rem;
+        width: 100%;
+        display: block;
+        box-shadow: 0px 0.4em rgb(219, 112, 112);
+
+    }
+
+    .box2 form {
+        background-color: #FFFFFF;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 35px;
+    }
+
+    .box2 form>div {
+        margin-bottom: 20px;
+    }
+
+    .box2 form p {
+        color: hsl(246, 25%, 77%);
+    }
+
+    .box2 form p .term {
+        color: hsl(0, 100%, 74%);
+        font-weight: 600;
+    }
+
+    input:not(input[type="submit"]) {
+        font-size: 0.96rem;
+        width: 100%;
+        padding: 15px 15px 15px 26px;
+        color: rgb(29, 7, 42);
+        outline: unset;
+        border: 1.7px solid rgb(233, 230, 230);
+        font-weight: 700;
+
+        border-radius: 5px;
+    }
+
+    input:not(input[type="submit"]):focus {
+        border-color: hsl(246, 25%, 77%);
+    }
+
+    /* 
+    input:not(input[type="submit"]):invalid{
+        border: 1.5px solid  hsl(0, 100%, 74%);
+    } */
+
+
+    input[type="submit"] {
+        background-color: hsl(154, 59%, 51%);
+        color: #FDF9F8;
+        border: unset;
+        padding: 15px 10px;
+        font-size: 0.9rem;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 600;
+        box-shadow: 0px .2em rgb(93, 154, 126);
+
+    }
+
+    div.action {
+        margin-bottom: 10px !important;
+    }
+
+    .box2>a>span {
+        font-size: 0.9rem;
+    }
+
+    .section>h1 {
+        margin: 0;
+        line-height: 2.8rem;
+        font-weight: 700;
+        font-size: 2.6rem;
+    }
+
+    .section>p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+    .section form p {
+        margin: 0;
+        text-align: center;
+        font-size: 0.7rem;
+        line-height: 1.4rem;
+    }
+
+
+    @media only screen and (max-width: 375px) {
+        .main,
+        .section {
+            width: 100%;
+        }
+
+        .main {
+            padding: 8rem 15px;
+        }
+
+        .box2 form {
+            padding: 20px;
+        }
+
+        .section>p {
+            font-size: .9rem;
+            line-height: 1.6rem;
+        }
+
+        .section>h1 {
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+
+        .box1 {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    
+    @media only screen and (min-width: 376px) and (max-width: 767px) {
+        .main {
+            width: 88%;
+        }
+        .section {
+            width: 100%;
+        }
+
+        .box2 form {
+            padding: 20px;
+        }
+
+        .box1 {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section>p {
+            color: #FDF9F8;
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+
+        .section form p {
+            font-size: .9rem;
+        }
+
+        .section>h1 {
+            font-weight: 700;
+            line-height: 2.2rem;
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    
+    @media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+        /* .section>p {            
+            font-size: 1.2rem;
+            line-height: 2.1rem;
+        } */
+    }
+
+</style>
+
+<body>
+    <main class="main">
+        <section class="section box1">
+            <h1>Learn to code by watching others</h1>
+            <p>
+                see how experienced developers solve problems in real-time. Whatching scripted tutorials is great, but
+                understanding how developers think is invaluable.
+            </p>
+        </section>
+        <section class="section box2">
+            <a href="" class="rounded"><strong>Try it free 7 days</strong> <span>Then 20$/mo. thereafter</span></a>
+            <form action="" method="post" class="rounded">
+
+                <div>
+                    <input type="text" name="fname" placeholder="First Name" id="fname" required>
+                </div>
+
+                <div>
+                    <input type="text" name="lname" placeholder="Last Name" id="lname" required>
+                </div>
+
+
+                <div>
+                    <input type="email" name="email" placeholder="Email Address" id="email" required>
+                </div>
+
+                <div>
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+                </div>
+
+                <div class="action">
+                    <input type="submit" class="rounded" name="authlogin" value="claim your free trial">
+                </div>
+
+                <p>By clicking the button, you are agreeing to our <a class="term" href="">Terms and Services</a></p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
