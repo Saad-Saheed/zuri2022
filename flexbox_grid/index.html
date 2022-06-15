@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: #FDF9F8;
+            font-size: 15px;
+            background-color: hsl(0, 0%, 95%);
+            font-family: 'Lexend Deca';
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+        }
+
+        p {
+            color: hsla(0, 0%, 100%, 0.75);
+            font-size: 0.74rem;
+            line-height: 1.3rem;
+            margin-top: 0px;
+            margin-bottom: 3rem;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+            color: hsl(0, 0%, 95%);
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .grid_link {
+            height: 60px;
+            width: 60px;
+            position: fixed;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 0;
+            color: hsl(0, 0%, 95%);
+            background-color: hsl(179, 100%, 13%);
+            bottom: 15px;
+            right: 15px;      
+            box-shadow: 0 0 .3em hsl(184, 100%, 22%);     
+        }
+
+        .section>h2 {
+            text-transform: uppercase;
+            font-family: 'Big Shoulders Display';
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        .section>a {
+            display: block;
+            text-transform: capitalize;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        .section>a:hover {
+            color: hsl(0, 0%, 95%);
+            border: 2px solid hsl(0, 0%, 95%);
+            background-color: transparent;
+        }
+
+        .main {
+            width: 55%;
+            margin: 6.2rem 0;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .section {
+            padding: 2.6rem;
+            flex: 1 33.33%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .rounded-pill {
+            border-radius: 2rem;
+        }
+
+        .box1 {
+            background-color: hsl(31, 77%, 52%);
+        }
+
+        .box1>a {
+            color: hsl(31, 77%, 52%);
+        }
+
+        .box2 {
+            background-color: hsl(184, 100%, 22%);
+        }
+
+        .box2>a {
+            color: hsl(184, 100%, 22%);
+        }
+
+        .box3 {
+            background-color: hsl(179, 100%, 13%);
+        }
+
+        .box3>a {
+            color: hsl(179, 100%, 13%);
+        }
+
+        @media only screen and (max-width: 767px) {
+            .main {
+                width: 90%;
+                margin: 3.2rem 0;
+            }
+
+            .section {
+                flex: 1 100%;
+            }
+
+            .grid_link{
+                bottom: 30px;
+                right: 30px;
+                background-color: hsla(179, 100%, 13%, .7);
+                box-shadow: 0 0 .3em hsl(0, 0%, 95%);
+            }
+
+        }
+
+        @media only screen and (min-width: 847px) and (max-width: 1440px) {
+
+            .rounded-lg-start {
+                border-top-left-radius: 0.4rem;
+                border-bottom-left-radius: 0.4rem;
+            }
+
+            .rounded-lg-end {
+                border-top-right-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <section class="section box1 rounded-lg-start">
+            <img src="./public/images/icon-sedans.svg" alt="">
+            <h2>sedans</h2>
+            <p>
+                Choose a sedan for its affordability and exellent fuel economy. Idea for cruising in the city or on your
+                next road trip.
+            </p>
+            <a href="" class="rounded-pill">learn more</a>
+        </section>
+        <section class="section box2">
+            <img src="./public/images/icon-suvs.svg" alt="">
+            <h2>suvs</h2>
+            <p>
+                Take SUV for its spacious interior, power, and versatility. Perfact for your next family vacation and
+                off-road adventures.
+            </p>
+            <a href="" class="rounded-pill">learn more</a>
+        </section>
+
+        <section class="section box3 rounded-lg-end">
+            <img src="./public/images/icon-luxury.svg" alt="">
+            <h2>luxury</h2>
+            <p>
+                cruise in the bast car brands without the bloated prices. Enjoy the enhanced confort of a luxury rental
+                and arrive in style.
+            </p>
+            <a href="" class="rounded-pill">learn more</a>
+        </section>
+
+        <a class="grid_link rounded-circle" href="./grid.html">Grid</a>
+    </main>
+</body>
+
+</html>

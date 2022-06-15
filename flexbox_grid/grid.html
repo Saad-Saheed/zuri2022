@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .flex_link{
+            height: 60px;
+            width: 60px;
+            position: fixed;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 0;
+            color: hsl(0, 0%, 95%);
+            background-color: rgb(235, 80, 32);
+            bottom: 15px;
+            right: 15px;      
+            box-shadow: 0 0 .3em hsl(184, 100%, 22%);     
+        }
+
+        body {
+            margin: 0;
+            color: #FDF9F8;
+            font-size: 15px;
+            background-color: #000000;
+            font-family: 'Lexend Deca';
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+        }
+
+        .box1 {
+            background-color: rgb(235, 80, 32);
+            grid-area: h;
+        }
+
+        .box2 {
+            background-color: rgb(255, 164, 1);
+            grid-area: t;
+        }
+
+        .box3 {
+            background-color: rgb(5, 170, 66);
+            grid-area: l;
+        }
+        .b-cont{
+            grid-area: r;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .box4 {
+            background-color: rgb(1, 174, 253);
+        }
+
+        .box5 {
+            background-color: rgb(1, 174, 253);
+            /* grid-area: b; */
+        }
+
+        .main {
+            width: 50%;
+            margin: 6.2rem 0;
+            display: grid;
+            gap: 15px;
+            grid-template-areas:
+                        'h h h t'
+                        'l l r r';
+        }
+
+        .main .boxes:not(.b-cont) {
+            padding: 4rem;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .main {
+                width: 95%;
+            }
+
+            .flex_link{
+                bottom: 30px;
+                right: 30px;
+                background-color: hsla(179, 100%, 13%, .7);
+                box-shadow: 0 0 .3em hsl(0, 0%, 95%);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="boxes box1"></div>
+        <div class="boxes box2"></div>
+        <div class="boxes box3"></div>
+        <div class="boxes b-cont">
+            <div class="boxes box4"></div>
+            <div class="boxes box5"></div>
+        </div>
+        <a class="flex_link rounded-circle" href="./index.html">Flex</a>
+    </main>
+</body>
+
+</html>
