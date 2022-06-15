@@ -18,7 +18,7 @@
             border-radius: 50%;
         }
 
-        .flex_link{
+        .flex_link {
             height: 60px;
             width: 60px;
             position: fixed;
@@ -29,8 +29,13 @@
             color: hsl(0, 0%, 95%);
             background-color: rgb(235, 80, 32);
             bottom: 15px;
-            right: 15px;      
-            box-shadow: 0 0 .3em hsl(184, 100%, 22%);     
+            right: 15px;
+            box-shadow: 0 0 .3em hsl(184, 100%, 22%);
+        }
+
+        a.git_link {
+            bottom: 80px;
+            background-color: hsl(184, 100%, 22%);
         }
 
         body {
@@ -61,7 +66,8 @@
             background-color: rgb(5, 170, 66);
             grid-area: l;
         }
-        .b-cont{
+
+        .b-cont {
             grid-area: r;
             display: grid;
             gap: 15px;
@@ -84,8 +90,8 @@
             display: grid;
             gap: 15px;
             grid-template-areas:
-                        'h h h t'
-                        'l l r r';
+                'h h h t'
+                'l l r r';
         }
 
         .main .boxes:not(.b-cont) {
@@ -98,15 +104,18 @@
                 width: 95%;
             }
 
-            .flex_link{
+            .flex_link {
                 bottom: 30px;
                 right: 30px;
                 background-color: hsla(179, 100%, 13%, .7);
                 box-shadow: 0 0 .3em hsl(0, 0%, 95%);
             }
 
-        }
+            a.flex_link {
+                bottom: 100px;
+            }
 
+        }
     </style>
 </head>
 
@@ -120,6 +129,8 @@
             <div class="boxes box4"></div>
             <div class="boxes box5"></div>
         </div>
+        <a class="git_link flex_link rounded-circle"
+            href="https://github.com/Saad-Saheed/zuri2022/tree/main/flexbox_grid">GitHub</a>
         <a class="flex_link rounded-circle" href="./index.html">Flex</a>
     </main>
 </body>
