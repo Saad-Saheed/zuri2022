@@ -39,8 +39,6 @@
     }
 
     .section {
-        /* background-color: black; */
-        /* padding: 20px; */
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
@@ -65,9 +63,17 @@
         text-align: center;
     }
 
+    span.error{
+        font-size: .7rem;
+        font-weight: 700;
+        color: #FF7978;
+        font-style: italic;
+        display: none;
+        text-align: right;
+    }
+
     .box2>a {
         background-color: hsl(248, 32%, 49%);
-        /* #5D54A3; */
         color: inherit;
         padding: 15px 10px;
         font-size: 0.9rem;
@@ -114,10 +120,22 @@
         border-color: hsl(246, 25%, 77%);
     }
 
-    /* 
-    input:not(input[type="submit"]):invalid{
+    input:not(input[type="submit"]):required:valid{
+        border: 1.7px solid rgb(233, 230, 230);
+    }
+
+    input:not(input[type="submit"]):required:invalid + span.error{ 
+        display: block;
+    }
+    
+    input:not(input[type="submit"]):required:invalid{
         border: 1.5px solid  hsl(0, 100%, 74%);
-    } */
+        padding-right: 40px;
+        background-image: url('./images/icon-error.svg');
+        background-position: 94% center;
+        background-repeat: no-repeat;
+        
+    }
 
 
     input[type="submit"] {
@@ -163,6 +181,9 @@
 
 
     @media only screen and (max-width: 375px) {
+        body{
+            background-image: url('./images/bg-intro-mobile.png');
+        }
         .main,
         .section {
             width: 100%;
@@ -257,19 +278,23 @@
 
                 <div>
                     <input type="text" name="fname" placeholder="First Name" id="fname" required>
+                    <span class="error">First Name cannot be empty</span>
                 </div>
 
                 <div>
                     <input type="text" name="lname" placeholder="Last Name" id="lname" required>
+                    <span class="error">Last Name cannot be empty</span>
                 </div>
 
 
                 <div>
                     <input type="email" name="email" placeholder="Email Address" id="email" required>
+                    <span class="error">Looks like this is not an email</span>
                 </div>
 
                 <div>
                     <input type="password" placeholder="Password" name="password" id="password" required>
+                    <span class="error">Password cannot be empty </span>
                 </div>
 
                 <div class="action">
