@@ -1,6 +1,6 @@
 const person = {
     name: ' Saad Saheed',
-    height: ' 6.8Ft Tall',
+    height: ' 6.9Ft',
     country: ' Nigeria'
 };
 
