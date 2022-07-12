@@ -63,7 +63,7 @@
         text-align: center;
     }
 
-    span.error{
+    span.error {
         font-size: .7rem;
         font-weight: 700;
         color: #FF7978;
@@ -120,21 +120,44 @@
         border-color: hsl(246, 25%, 77%);
     }
 
-    input:not(input[type="submit"]):required:valid{
+    input:not(input[type="submit"]):required:valid {
         border: 1.7px solid rgb(233, 230, 230);
     }
 
-    input:not(input[type="submit"]):required:invalid + span.error{ 
+    input:not(input[type="submit"]):required:invalid+span.error {
         display: block;
     }
-    
-    input:not(input[type="submit"]):required:invalid{
-        border: 1.5px solid  hsl(0, 100%, 74%);
+
+    input:not(input[type="submit"]):required:invalid {
+        border: 1.5px solid hsl(0, 100%, 74%);
         padding-right: 40px;
         background-image: url('./images/icon-error.svg');
         background-position: 94% center;
         background-repeat: no-repeat;
-        
+
+    }
+
+    .rounded-circle {
+        border-radius: 50%;
+    }
+
+    .grid_link {
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        padding: 20px 0px;
+        color: hsl(0, 94%, 50%);
+        top: 15px;
+        right: 15px;
+        box-shadow: 0 0 .3em hsl(141, 55%, 67%);
+    }
+
+    a.git_link {
+        bottom: 80px;
+        background-color: hsl(0, 0%, 99%);
     }
 
 
@@ -182,9 +205,10 @@
 
 
     @media only screen and (max-width: 374px) {
-        body{
+        body {
             background-image: url('./images/bg-intro-mobile.png');
         }
+
         .main,
         .section {
             width: 100%;
@@ -216,11 +240,12 @@
 
     }
 
-    
+
     @media only screen and (min-width: 375px) and (max-width: 767px) {
         .main {
             width: 88%;
         }
+
         .section {
             width: 100%;
         }
@@ -250,10 +275,10 @@
             line-height: 2.2rem;
             font-size: 1.5rem;
         }
-        
+
     }
 
-    
+
     @media only screen and (min-width: 768px) and (max-width: 1440px) {
 
         /* .section>p {            
@@ -261,7 +286,6 @@
             line-height: 2.1rem;
         } */
     }
-
 </style>
 
 <body>
@@ -306,6 +330,7 @@
             </form>
         </section>
     </main>
+    <a class="grid_link git_link rounded-circle" href="https://github.com/Saad-Saheed/zuri2022/tree/main/registration">GitHub</a>
 </body>
 
 </html>
