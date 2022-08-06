@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuri</title>
+    <link rel="preload" href="./public/fonts/Graphik-Medium.woff2" />
+    <link rel="preload" href="./public/fonts/Graphik-Semibold.woff2" />
+    <link rel="preload" href="./public/fonts/Graphik-Regular.woff2" />
+
+    <link rel="shortcut icon" href="./public/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./public/images/favicon.png">
+
+    <!-- bootsrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./public/css/training.css">
+</head>
+
+<body>
+
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid custom-cont flex-nowrap">
+                <a class="navbar-brand" href="./training.html">
+                    <img src="./public/images/logo.svg" alt="" class="logo" style="object-fit: fill;">
+                </a>
+                <!-- <a class="navbar-toggler no-link" style="color: #9B1FE8 !important;" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: #9B1FE8 !important;"></span>
+                </a> -->
+                <div class="" id="navbarNav">
+                    <!-- <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">Hello</li>
+                    </ul> -->
+                    <ul class="flex-nowrap navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                        <li class="d-none d-lg-inline-block me-3 me-lg-4 nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                        </li>
+                        <li class="d-none d-lg-inline-block me-3 me-lg-4 nav-item">
+                            <a class="nav-link" aria-current="page" href="#why">Why Us?</a>
+                        </li>
+                        <li class="d-none d-lg-inline-block me-3 me-lg-4 nav-item">
+                            <a class="nav-link" aria-current="page" href="#stacks">Stacks Covered</a>
+                        </li>
+                        <li class="d-none d-lg-inline-block me-3 me-lg-5 nav-item">
+                            <a class="nav-link" aria-current="page" href="#faqs">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="thumb-btn position-relative">
+                                <a class="thumb-circle bg-danger position-absolute" href="">
+                                    <img class="thumb img-fluid" src="./public/images/thumbs.png" alt="thumb logo">
+                                </a>
+                                <a href=""
+                                    class="text-btn d-inline-block text-decoration-none rounded-pill bg-danger text-center"
+                                    style="background-color: #9B1FE8;" href="./apply.html" tabindex="-1"
+                                    aria-disabled="true">Enroll Now</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="d-flex">
+                        <a class="nav-link btn text-white" style="background-color: #9B1FE8;" href="./apply.html"
+                            tabindex="-1" aria-disabled="true">Apply Now</a>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="sect-hero container custom-cont2 mx-auto">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-3">
+                <div class="lady-img-cont text-center mx-auto">
+                    <img src="./public/images/lady1.jpg" alt="lady1 image" class="blend-img left-img" width="100%">
+                </div>
+            </div>
+            <div class="col-lg-6 text-center position-relative">
+                <p class="search danger">And now your
+                    search has ended...</p>
+                <p class="gain text-center mx-auto">Gain knowledge
+                    to help you scale through the tech industry for free.</p>
+                <div class="coil-line-cont d-flex position-relative justify-content-end"
+                    style="margin-left: -20px; margin-bottom: 28px;">
+                    <img src="./public/images/line.svg" alt="" width="29%" class="position-absolute coil-line">
+                </div>
+                <p class="info mx-auto" style="width: 68%;">A basic
+                    introduction to software development and product design aimed at complete beginners, which
+                    anyone can join</p>
+                <div class="d-flex justify-content-center enroll-cont p-2"> <a
+                        class="btn-enroll text-decoration-none bg-danger rounded-pill" tabindex="0" href="">Enroll
+                        Now<span class=""></span></a>
+                </div>
+                <div class="pointer-line m-auto d-flex justify-content-end">
+                    <img src="./public/images/section1wire.svg" class="line2" alt="" width="14%">
+                </div>
+                <img src="./public/images/maleface.svg" alt="" class="d-none d-lg-block line3" width="10%">
+            </div>
+
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="d-flex align-items-center">
+                    <div><img src="./public/images/male1.jpg" alt="male1 image" class="blend-img right-img"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="thin-rule">
+    </section>
+
+    <section class="sect-about container custom-cont2 py-0 mx-auto" id="about">
+        <div class="row">
+            <div class="col-lg-4" style="display: flex; align-items: center;">
+                <p class="l-text mx-auto">Ingressive for Good was
+                    launched in July 2020 with No dollar in donation...</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="d-flex justify-content-center"><img src="./public/images/ingresive.jpg" alt=""
+                        class="blend-img i4g-image"></div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+                <p class="r-text mx-auto">to help increase the earning
+                    power of African youths by providing them with tech skills, community, tools, resources, and jobs...
+                    <span><a href="https://ingressive.org/i4g-in-2021/" target="_blank" rel="noreferrer"
+                            class="more">Read More</a> </span>
+                </p>
+            </div>
+        </div>
+        <hr class="thin-rule">
+    </section>
+
+    <section class="sect-why container custom-cont3 py-0 mx-auto pt-5" id="why">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="d-flex justify-content-center"><img src="./public/images/section3wire.svg" alt=""
+                        width="15%"></div>
+                <div>
+                    <p class="why-title danger">Why Zuri
+                        Training?</p>
+                    <p class="why-text">Here at Zuri,
+                        you gain access to enough knowledge to introduce and aid your success in the tech industry.</p>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex justify-content-start star-cont">
+                    <img src="./public/images/Star.jpg" alt="" class="blend-img" width="65%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sect-boxes container custom-cont3 mx-auto">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="boxes box1 bg-danger"><img class="boxes-curve" src="./public/images/curve1.png" alt="">
+                    <p class="boxes-num">01</p>
+                    <p class="boxes-title">Fully <br> Remote</p>
+                    <p class="boxes-text">100% online classes available to
+                        anyone in the world.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="boxes box2 bg-white"><img class="boxes-curve" src="./public/images/curve.svg" alt="">
+                    <p class="boxes-num">02</p>
+                    <p class="boxes-title">Hands-on <br> Experience</p>
+                    <p class="boxes-text">We don't just teach you theory,
+                        we show you how to build things.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="boxes box2 bg-white"><img class="boxes-curve" src="./public/images/curve3.svg" alt="">
+                    <p class="boxes-num">03</p>
+                    <p class="boxes-title">Collaborative <br> Learning</p>
+                    <p class="boxes-text">We connect you with like minds
+                        to grow together.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="boxes box2 bg-white"><img class="boxes-curve" src="./public/images/curve4.svg" alt="">
+                    <p class="boxes-num">04</p>
+                    <p class="boxes-title">Real-life <br> Projects</p>
+                    <p class="boxes-text">We give CV worthy projects to
+                        help you hit the ground running.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="boxes box2 bg-white"><img class="boxes-curve" src="./public/images/curve5.svg" alt="">
+                    <p class="boxes-num">05</p>
+                    <p class="boxes-title">Beginner <br> Friendly</p>
+                    <p class="boxes-text">We provide step-by-step
+                        procedures on how to get things done.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="boxes box2 bg-white"><img class="boxes-curve" src="./public/images/curve6.svg" alt="">
+                    <p class="boxes-num">06</p>
+                    <p class="boxes-title">In-program<br> Mentorship</p>
+                    <p class="boxes-text">During and after the program
+                        you have access to experience seniors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sect-services bg-danger">
+        <div class="custom-cont3 container">
+            <div class="row">
+                <div class="services-boxes col-lg-5  text-left">
+                    <div class="w-75 position-relative d-flex justify-content-end">
+                        <img src="./public/images/section5wire.svg" class="pointer-line" alt="" width="22%">
+                    </div>
+                    <p class="services-title-1">We will help you get
+                        started</p>
+                    <p class="services-title-2">High quality
+                        training with hands-on practice</p>
+                    <p class="services-text">We give you weekly
+                        tasks, ranging from easy to complex, as you progress from stage to stage; making it to the final
+                        stage means you are now ready to continue learning and growing independently.</p>
+                    <a class="btn-enroll-white text-center text-decoration-none danger bg-white rounded-pill"
+                        href="">Enroll Now<span class=""></span></a>
+                    <div class="row gy-4 mt-4">
+                        <div class="col-lg-6 col-md-3 col-6">
+                            <button class="services-button rounded-pill" type="button">
+                                <img src="./public/images/hand.svg" class="services-button-icons" alt="">
+                                <p class="m-0">Teamwork</p>
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-6">
+                            <button class="services-button rounded-pill" tabindex="0" type="button">
+                                <img src="./public/images/mentor.svg" class="services-button-icons" alt="">
+                                <p class="m-0">Mentorship</p>
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-6">
+                            <button class="services-button rounded-pill" tabindex="0" type="button">
+                                <img src="./public/images/practice.svg" class="services-button-icons" alt="">
+                                <p class="m-0">Practice</p>
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-6">
+                            <button class="services-button rounded-pill" tabindex="0" type="button">
+                                <img src="./public/images/games.svg" class="services-button-icons" alt="">
+                                <p class="m-0">Fun &amp; Games</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div><img src="./public/images/section5-image.png" alt="" width="100%"></div>
+                </div>
+            </div>
+        </div>
+        <div><img class="dotsection" src="./public/images/dotsection5.svg" alt="" width="15%" style="padding: 35px;">
+        </div>
+    </section>
+
+    <section class="sect-stacks container custom-cont3 mx-auto" id="stacks">
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <div>
+                    <p class="stack-title mt-0 mb-2 danger">Scope Of Program</p>
+                    <p class="stack-text">Here is the list of areas that will be explored in the training.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div></div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <img src="./public/images/section6.svg" alt="" class="stack-pointer" id="frontend" width="13%">
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="boxes">
+                    <p class="stack-box-title">Frontend Development</p>
+                    <div class="d-flex stack-logo-cont">
+                        <img src="./public/images/html.svg" alt="">
+                        <img src="./public/images/css-3 logo.svg" alt="">
+                        <img src="./public/images/javascript logo.svg" alt="">
+                    </div>
+                    <p class="stack-box-text " style="margin-bottom: 5px;">
+                        This track deals with the aspect of your application that the
+                        users interact with. A front-end developer will be able to correctly interpret a given
+                        design to the user interface.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="boxes" id="backend">
+                    <p class="stack-box-title">Backend Development</p>
+                    <div class="d-flex stack-logo-cont">
+                        <img src="./public/images/php2 logo.svg" alt="">
+                        <img src="./public/images/python-4 logo.svg" alt="">
+                        <img src="./public/images/javascript logo.svg" alt="">
+                    </div>
+                    <p class="stack-box-text ">This track deals with the
+                        aspect of the application the user does not directly interact with. It allows the frontend
+                        function either by running some back-end code or connecting to the database.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="boxes" id="design">
+                    <p class="stack-box-title">Product Design</p>
+                    <div class="d-flex stack-logo-cont">
+                        <img src="./public/images/adobe-xd logo.svg" alt="">
+                        <img src="./public/images/Figma logo.svg" alt="">
+                    </div>
+                    <p class="stack-box-text ">This track deals with
+                        creating a graphic plan for an application. You will learn to convert project documentation
+                        into viewable and understandable graphic design for the developers to work with.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="boxes" id="devops">
+                    <p class="stack-box-title">DevOPS</p>
+                    <div class="d-flex stack-logo-cont">
+                        <img src="./public/images/Ubuntu logo.svg" alt="">
+                        <img src="./public/images/Bash logo.svg" alt="">
+                        <img src="./public/images/aws logo.svg" alt="">
+                    </div>
+                    <p class="stack-box-text ">The DevOps track is an
+                        extension of the backend track. It involves tools that’l allow the participant to deploy
+                        solutions for public use.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="boxes" id="fullstack">
+                    <p class="stack-box-title">Fullstack Development</p>
+                    <div class="d-flex stack-logo-cont">
+                        <img src="./public/images/html.svg" alt="">
+                        <img src="./public/images/css-3 logo.svg" alt="">
+                        <img src="./public/images/javascript logo.svg" alt="">
+                        <img src="./public/images/python-4 logo.svg" alt="">
+                    </div>
+                    <p class="stack-box-text" style="margin-bottom: 8px;">A
+                        combination of frontend, backend, and DevOps. This track will
+                        only be available to participants who have the time to dedicate to the training.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12" id="framework">
+                <div class="boxes">
+                    <p class="stack-box-title">Frameworks</p>
+                    <div class="d-flex stack-logo-cont">
+                        <img src="./public/images/Laravel logo.svg" alt="">
+                        <img src="./public/images/React logo.svg" alt="">
+                        <img src="./public/images/Django logo.svg" alt="">
+                    </div>
+                    <p class="stack-box-text" style="margin-bottom: 20px;">
+                        During the program we will be exploring several useful
+                        frameworks to give you an edge in the industry and help you develop complex applications
+                        much faster.</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-bottom: 85px; margin-top: 70px;">
+            <a class="btn-enroll rounded-pill bg-danger text-decoration-none" tabindex="0" href="">Enroll Now<span
+                    class=""></span></a>
+        </div>
+        <hr class="thin-rule">
+        </div>
+    </section>
+
+
+    <section class="sect-faqs container accordion-cont mx-auto" id="faqs">
+        <div class="faq-pointer-cont">
+            <img src="./public/images/section7wire.svg" width="15%" alt="" class="faq-pointer">
+        </div>
+        <div>
+            <p class="faq-title danger text-center">Got Questions?</p>
+            <p class="faq-text text-center">Frequently Asked Questions</p>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Would I have to pay to enroll for the training?
+                    </a>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">No, the program is completely
+                        free thanks to Ingressive For Good</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        What are
+                        the things I would need to participate?
+                    </a>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">You'll need a laptop, internet
+                        connection and the willingness to learn through collaboration and mentorship.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What
+                        happens if i join and I’m not active?
+                    </a>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Participants who join the
+                        program and stop engaging will be given the chance to catch up. You'll also be assigned
+                        a 'study-mate' and mentor to help you. However, there is the possibility of not being
+                        promoted to the next stage if you remain inactive for too long</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Can I
+                        switch from the part-time track to full-time and vice versa?
+                    </a>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Unfortunately, no, you cannot switch from part-time to full-time and
+                        vice-versa</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Will I
+                        get paid?
+                    </a>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We reward some participants who complete tasks early, however, this is
+                        not a weekly
+                        reward. All the work that will be done during the program are hypothetical.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-center py-5">
+            <p class="mb-0 mt-2" style="padding-right: 15px;">Still got questions?</p>
+            <div class="mt-2 d-flex justify-content-center">
+                <a href="#" class="bg-danger btn-enroll text-decoration-none text-center rounded-pill d-block"
+                    target="_blank">
+                    <svg class="twitter-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+                        </path>
+                    </svg>
+                    <span class="">Tweet them at us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr class="custom-cont3 mx-auto thin-rule">
+
+    <section class="sect-struct container pt-4 struct-cont mx-auto">
+
+        <div class="d-flex justify-content-start w-75 m-auto" id="what-we-do">
+            <img class="struct-wire" src="./public/images/section7wire.svg" alt="" width="15%">
+        </div>
+        <div class="line-cont2 d-flex justify-content-end m-auto">
+            <img src="./public/images/Star1.svg" alt="" width="12%" class="box8-image">
+        </div>
+        <div class="struct-heading text-center">
+            <p class="struct-title1 danger">Structure</p>
+            <p class="struct-title2 my-0 pb-3" style="padding-bottom: 20px;">Program Structure</p>
+            <p class="struct-text" style="padding-bottom: 60px;">There are 2 broad paths in this program based on
+                your availability.</p>
+        </div>
+
+        <div class="row g-5 position-relative">
+            <img src="./public/images/move.svg" alt="" class="plain-shape">
+            <div class="col-md-6 col-sm-12">
+                <div class="boxes box1">
+                    <p class="title">Full-time</p>
+                    <p class="text">Requires at least 25
+                        hours weekly on program content.</p>
+
+                    <p class="list-header">Available Tracks:</p>
+                    <ul type="disc">
+                        <li>Full Stack: Backend
+                            (Python, JavaScript), Frontend (HTML, CSS, JavaScript) &amp; DevOps</li>
+                        <li>Design: Figma, Adobe
+                            XD</li>
+                    </ul>
+                    <p class="list-header">Phases:</p>
+                    <ul type="disc">
+                        <li>Training Phase</li>
+                        <li>Project Phase</li>
+                    </ul>
+                    <p class="list-header">Post Program:</p>
+                    <ul type="disc">
+                        <li>Certification of
+                            Attendance</li>
+                        <li>Zuri Internship <img src="./public/images/clarity.svg" alt="" width="15px"></li>
+                        <li>Laptop Reward (upgrade
+                            or new one) <img src="./public/images/clarity.svg" alt="" width="15px"></li>
+                        <li>Job Placement <img src="./public/images/clarity.svg" alt="" width="15px"></li>
+                        <li>Zuri Talent Pool <img src="./public/images/clarity.svg" alt="" width="15px"></li>
+                        <li>More Training: <img src="./public/images/clarity.svg" alt="" width="15px"> <br>
+                            Interview Prep <br>
+                            Algorithms &amp; Data
+                            Structure <br>
+                            Freelance Setup &amp;
+                            Training <br>
+                            LinkedIn Optimization <br>
+                            CV Review
+                        </li>
+
+                    </ul>
+                    <img src="./public/images/hour.png" alt="" class="refresh">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="boxes box2">
+                    <p class="title">Part-time</p>
+                    <p class="text">Requires at least 11
+                        hours weekly on program content.</p>
+                    <p class="list-header">Available Tracks:</p>
+
+                    <ul class="track-list" type="disc">
+                        <li>Frontend: <br> HTML, CSS, JavaScript</li>
+                        <li>Backend: Can only
+                            select one backend language <br>
+                            Python,<br>
+                            PHP,<br>
+                            JavaScript
+                        </li>
+                        <li>Design: <br>
+                            Figma
+                        </li>
+                    </ul>
+                    <p class="list-header">Phases:</p>
+                    <ul type="disc">
+                        <li>Training Phase</li>
+                    </ul>
+                    <p class="list-header">Post Program:</p>
+                    <ul type="disc">
+                        <li>Certification of
+                            Attendance</li>
+                        <li>Zuri Internship</li>
+                    </ul>
+                    <img src="./public/images/time.png" alt="" class="time">
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex justify-content-end align-items-center triangle-cont"><img src="./public/images/circle.png"
+                alt="" class="triangle"></div>
+    </section>
+
+    <section class="sect-start container struct-cont mx-auto overflow-hidden">
+        <img src="./public/images/circle.png" alt="" class="dots d-none d-md-block">
+        <div class="main-cont row bg-danger position-relative" style="border-radius: 24px;">
+            <img src="./public/images/round.svg" alt="" class="position-absolute spiral">
+            <img src="./public/images/bend1.svg" alt="" class="position-absolute curve1">
+
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                <p class="start-title">Get Started</p>
+                <p class="start-text mx-auto">Break into the tech
+                    industry like a Pro</p>
+                <div class="mt-4 display-flex justify-content-center">
+                    <a class="btn-enroll-white text-center text-decoration-none danger bg-white rounded-pill"
+                        href="/enroll">Enroll Now</a>
+                </div>
+                <div style="display: flex;">
+                    <img src="./public/images/curve2.svg" alt="" class="curve2 position-absolute">
+                    <img src="./public/images/mains.png" alt="" class="dots2 position-absolute">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="sect-footer struct-cont mx-auto overflow-hidden">
+        <div class="d-flex flex-wrap justify-content-md-between justify-content-center  align-items-center">
+            <div class="me-md-4 mb-3">
+                <div class="text-center"><a href="/"><img align="center" class="img-fluid" src="./public/images/logo.svg" alt=""> </a></div>
+            </div>
+            <div class="mb-3">
+                <a href=" https://www.facebook.com/thezuriteam/" target="_blank">
+                    <img src="./public/images/facebook.svg" alt="" style="padding-right: 10px;"></a>
+
+                <a href=" https://www.linkedin.com/company/zuri-team" target="_blank">
+                    <img src="./public/images/linkd.svg" alt="" style="padding-right: 10px;"></a>
+
+                <a href=" https://twitter.com/thezuriteam" target="_blank">
+                    <img src="./public/images/twitter.svg" alt="" style="padding-right: 10px;"></a>
+
+                <a href=" https://www.youtube.com/thezuriteam" target="_blank">
+                    <img src="./public/images/youtube.svg" alt="" style="padding-right: 10px;"></a>
+            </div>
+
+        </div>
+
+        
+        <div class="d-flex flex-wrap flex-md-row flex-column justify-content-md-between justify-content-center align-items-center" style="padding-top: 1.2rem;">
+
+            <p class="mb-md-0 mb-1 order-md-0 order-2 footer-text">                
+                © 2022 Zuri Training
+            </p>
+
+            <hr class="w-100 thin-rule my-3 d-md-none d-inline-block order-md-3 order-1 border">
+            
+            <div class="policy mb-md-2 order-md-1 order-0 d-flex flex-md-row flex-column align-items-center flex-wrap justify-content-md-between justify-content-center">
+                <a class="mb-md-0 me-md-3 mb-1 footer-text order-md-0 order-1" href="" style="text-decoration: none;">
+                    <p class="footer-text">Privacy Policy</p>
+                </a>
+                <a class="mb-md-0 mb-1 footer-text order-md-1 order-0" href="https://ingressive.org/" target="_blank" style="text-decoration: none;">
+                    <p>Ingressive For Good</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootsrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

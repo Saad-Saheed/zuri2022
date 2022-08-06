@@ -1,0 +1,875 @@
+@import url(./util.css);
+
+@font-face {
+    font-display: fallback;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Graphik-Regular.woff2) format("woff2");
+    unicode-range: U+0020-007f
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Graphik-Medium.woff2) format("woff2");
+    unicode-range: U+0020-007f
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Graphik-Semibold.woff2) format("woff2");
+    unicode-range: U+0020-007f
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Sequel Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/static/media/Sequel%20Sans%20Black%20Head.af6cda50d5e5d5fa7505.ttf) format("truetype")
+}
+
+body {
+    background-color: #FFFDF5;
+    font-family: Graphik;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0.9rem 0;
+    z-index: 120;
+    background-color: #FFFDF5;
+}
+
+.navbar .nav-link {
+    color: rgba(0, 0, 0, .8) !important;
+}
+
+.navbar .logo {
+    /* width: 225px; */
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-cont {
+    max-width: 1260px;
+}
+
+.struct-cont {
+    max-width: 85%;
+}
+
+.accordion-cont {
+    max-width: 1030px;
+}
+
+.thumb-btn a.text-btn {
+    padding: 0.5rem 2.2rem;
+}
+
+.nav-item .thumb-btn {
+    margin-left: 2.5rem;
+}
+
+.thumb-btn .thumb-circle {
+    z-index: 10;
+    left: -45px;
+    top: -15px;
+    display: inline-block;
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.sect-hero {
+    padding-top: 7rem !important;
+    margin-top: 6.2rem !important;
+}
+
+.sect-hero .info {
+    margin-top: 30px;
+}
+
+.sect-hero .enroll-cont {
+    padding-top: 1.5rem !important;
+}
+
+.sect-hero>div {
+    padding-bottom: 120px;
+}
+
+.custom-cont3 {
+    max-width: 1240px;
+}
+
+.custom-cont2 {
+    max-width: 1250px;
+}
+
+.btn-enroll {
+    padding: 0.6rem 2.2rem;
+}
+
+.btn-enroll-white {
+    padding: 0.7rem 2.2rem;
+}
+
+.btn-enroll-white:hover {
+    box-shadow: 0 1px 0.2rem #514949;
+}
+
+p.search {
+    margin-bottom: 5px;
+}
+
+.line2 {
+    position: absolute;
+    right: 30%;
+    bottom: -117px;
+}
+
+.line3 {
+    position: absolute;
+    left: 6%;
+    width: 54px !important;
+    bottom: -50px;
+}
+
+.coil-line {
+    right: 86px;
+    top: -16px;
+}
+
+.left-img {
+    width: 125% !important;
+    margin-right: -20px;
+}
+
+.right-img {
+    margin-left: -20px;
+    width: 110% !important;
+}
+
+p.gain {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.sect-about {}
+
+.i4g-image {
+    object-fit: contain;
+    width: 55% !important;
+}
+
+.sect-about .r-text,
+.sect-about .l-text {
+    font-size: 1.6rem;
+    padding-top: 2rem;
+}
+
+.sect-about .r-text {
+    text-align: right;
+    line-height: 120%;
+}
+
+.sect-about .l-text {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.sect-about .more {
+    color: #43b97f;
+}
+
+.sect-why,
+.sect-boxes {
+    padding-top: 3.5rem;
+}
+
+.sect-why .why-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.sect-why .why-text {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.4rem;
+}
+
+.sect-boxes {
+    padding-bottom: 8rem;
+}
+
+.sect-boxes .boxes {
+    position: relative;
+    box-shadow: 0 11px 22px rgba(231, 51, 43, 0.102);
+    border-radius: 18px;
+    height: auto;
+    padding: 58px 48px 93px 50px !important;
+}
+
+.sect-boxes .boxes-curve {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sect-boxes .boxes-num {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    line-height: 140%;
+}
+
+.sect-boxes .boxes-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 125%;
+}
+
+.sect-boxes .boxes-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.14rem;
+    line-height: 118%;
+}
+
+.sect-boxes .boxes:hover {
+    transform: translateY(-16px);
+    transition: transform .3s ease, -webkit-transform .3s ease !important;
+}
+
+.sect-services {
+    padding-top: 4rem !important;
+}
+
+.sect-services .services-title-1 {
+    font-size: 1.14rem;
+    font-weight: 400;
+}
+
+.sect-services .services-title-2,
+.sect-stacks .stack-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 125%;
+}
+
+.sect-services .services-text {
+    margin-bottom: 2.3rem;
+    margin-top: 3rem;
+    width: 70%;
+    text-align: left;
+    font-size: 1.11rem;
+    line-height: 130%;
+}
+
+.sect-services .services-button {
+    cursor: no-drop !important;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: transparent;
+    outline: 0px;
+    cursor: pointer;
+    user-select: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.services-button>p {
+    font-weight: 500;
+    font-size: 1.14rem;
+    text-transform: capitalize;
+}
+
+.services-button-icons {
+    width: 29.5%;
+    padding-right: 9px;
+}
+
+.sect-stacks {
+    padding-top: 4rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.sect-stacks .stack-title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 130%;
+}
+
+.sect-stacks .stack-text {
+    margin-bottom: -2rem !important;
+}
+
+.sect-stacks .boxes {
+    background: #FFFFFF;
+    border-radius: 2.6rem;
+    box-shadow: 0 11px 22px rgba(231, 51, 43, 0.1);
+    padding: 30px 45px 5px 45px !important;
+    height: 100%;
+}
+
+.sect-stacks .stack-box-title {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.sect-stacks .stack-logo-cont {
+    margin: 1.2rem 0 2.6rem 0 !important;
+}
+
+.sect-stacks .stack-logo-cont img {
+    min-width: 15%;
+    max-width: 22%;
+    object-fit: contain;
+    margin-right: 0.9rem;
+}
+
+.sect-stacks .stack-box-text {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+}
+
+.sect-faqs .faq-title,
+.sect-struct .struct-title1 {
+    margin-bottom: 0 !important;
+    font-weight: 400;
+    font-size: 1.55rem;
+}
+
+.sect-faqs .faq-text,
+.sect-struct .struct-title2 {
+    padding-bottom: 80px;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.sect-faqs .faq-pointer-cont {
+    margin-bottom: -18px;
+}
+
+.sect-faqs .accordion-button::after {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3c!--! Font Awesome Pro 6.1.2 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3e%3cpath d='M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-decoration: none;
+    color: inherit !important;
+    background-color: #FFFDF5 !important;
+    box-shadow: unset !important;
+}
+
+.accordion-button {
+    padding-bottom: 1rem;
+}
+
+.sect-faqs .accordion-button.collapsed,
+.accordion-item {
+    background-color: #FFFDF5 !important;
+}
+
+.accordion-item {
+    padding-top: 1.3rem;
+    padding-bottom: 1.8rem;
+    border: 1px solid rgba(71, 44, 111, .43) !important;
+}
+
+.sect-faqs .btn-enroll {
+    font-size: 1rem;
+    user-select: none;
+    padding: 0.35rem 2rem;
+    cursor: pointer;
+}
+
+.twitter-svg {
+    padding-right: 6px;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1rem;
+}
+
+.sect-struct .line-cont2 {
+    width: 92%;
+}
+
+.sect-struct .struct-title1 {
+    margin-top: 0px;
+}
+
+.sect-struct .boxes {
+    position: relative;
+    color: #FFFFFF;
+    background: #1b1a20 !important;
+    border: 1px solid #fff !important;
+    border-radius: 65px !important;
+    box-shadow: 0 31px 60px rgba(231, 51, 43, .2) !important;
+    padding: 64px 48px;
+    font-size: 1rem;
+}
+
+.sect-struct .boxes ul {
+    padding-left: 15px;
+}
+
+.sect-struct .list-header {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 1.11rem;
+}
+
+.struct-heading {
+    margin-top: -4.8rem;
+}
+
+.sect-struct .boxes .text {
+    font-size: 1.1rem;
+    /* line-height: 0.5rem; */
+}
+
+.sect-struct .boxes li::marker {
+    font-size: 1.2rem;
+}
+
+.sect-struct .boxes.box2 .track-list li {
+    margin-bottom: 12px;
+}
+
+.sect-struct .boxes .title {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.sect-struct .refresh,
+.sect-struct .time {
+    position: absolute;
+    right: 38px;
+}
+
+.sect-struct .refresh {
+    width: 18%;
+    bottom: 8%;
+}
+
+.sect-struct .time {
+    bottom: 13%;
+    width: 34%;
+}
+
+.sect-struct .plain-shape {
+    position: absolute !important;
+    width: 17%;
+    z-index: 3;
+    top: 28%;
+    left: -10%;
+}
+
+.triangle-cont {
+    /* overflow-x: hidden !important; */
+    position: relative;
+    z-index: -2;
+}
+
+.triangle-cont .triangle {
+    position: absolute;
+    top: -11.5rem;
+    right: -4%;
+    width: 16%;
+}
+
+.sect-start {
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+    padding-top: 49px !important;
+}
+
+.sect-start>div.main-cont {
+    padding-top: 5.8rem;
+    padding-bottom: 5.8rem;
+}
+
+.sect-start .start-text {
+    text-align: center;
+    width: 50%;
+    line-height: 125%;
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+.sect-start .dots {
+    margin-bottom: 27px;
+    width: 10% !important;
+}
+
+.sect-start .spiral {
+    left: 10% !important;
+    top: 20% !important;
+    width: 14% !important;
+}
+.sect-start .curve1{
+    top: 0;
+    right: -1%;
+    width: 14%;
+}
+
+.sect-start .curve2{
+    bottom: 0;
+    left: -1%;
+    width: 10%;
+}
+.sect-start .dots2 {
+    right: 0% !important;
+    bottom: 0% !important;
+    width: 14% !important;
+}
+.sect-footer .footer-text{
+    color: #1b1a20 !important;
+    font-size: 1rem;
+}
+/* medium desktop screen */
+@media screen and (max-width: 1200px) {
+
+    /*1070*/
+    .navbar .logo {
+        width: 225px;
+    }
+
+    .nav-item .thumb-btn {
+        margin-left: 0.8rem;
+    }
+
+    /* .coil-line{
+        right: 31%; 
+        top: -16px;
+        width: 22% !important;
+    } */
+    .line2 {
+        right: 32%;
+        bottom: -130px;
+    }
+
+    .left-img {
+        width: 100% !important;
+        margin-right: 0px;
+    }
+
+    .lady-img-cont {
+        width: 68%;
+    }
+
+    p.gain {
+        width: 82%;
+        font-size: 2.5rem;
+    }
+
+    .i4g-image {
+        width: 76% !important;
+    }
+
+    .sect-about .r-text {
+        width: 95%;
+        font-size: 1.2rem;
+    }
+
+    .sect-about .l-text {
+        width: 95%;
+        text-align: center;
+    }
+
+    .star-cont {
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .sect-why .why-text {
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+    }
+
+    .sect-services .dotsection {
+        width: 18% !important;
+    }
+
+}
+
+/* large mobile*/
+@media screen and (max-width: 767px) {
+
+    .navbar .logo {
+        width: 180px !important;
+    }
+
+    .thumb-btn a.text-btn {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .nav-item .thumb-btn {
+        margin-left: 1rem;
+    }
+
+    .thumb-btn .thumb-circle {
+        left: -50px;
+        top: -14px;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .lady-img-cont {
+        width: 75%;
+    }
+
+    p.search {
+        margin-bottom: 10px;
+    }
+
+    .left-img {
+        margin-bottom: -10px;
+        width: 100% !important;
+        height: auto;
+    }
+
+    .coil-line {
+        right: 31%;
+        top: -16px;
+        width: 22% !important;
+    }
+
+    .sect-hero {
+        padding-top: 0rem !important;
+        margin-top: 0rem;
+    }
+
+    .sect-hero .info {
+        width: 60% !important;
+    }
+
+    p.gain {
+        width: 94%;
+        font-size: 2.5rem;
+        line-height: 110%;
+    }
+
+    .i4g-image {
+        width: 42% !important;
+    }
+
+    .sect-services .dotsection {
+        width: 25% !important;
+    }
+
+    .sect-services .services-button {
+        padding: 0.6rem .8rem;
+    }
+
+    .services-button>p {
+        font-size: 1rem;
+    }
+
+    .services-boxes {
+        margin-bottom: 2rem;
+    }
+
+    .sect-services .services-title-2 {
+        font-size: 2rem;
+    }
+
+    .sect-stacks .stack-text {
+        font-size: 1.6rem;
+    }
+
+    .stack-pointer {
+        width: 40%;
+    }
+
+    .sect-struct .struct-heading .struct-title1 {
+        font-size: 1rem;
+    }
+
+    .sect-struct .struct-heading .struct-title2 {
+        font-size: 1.5rem;
+    }
+
+    .sect-struct .struct-heading {
+        margin-top: -10px;
+    }
+
+    .struct-cont {
+        max-width: 95%;
+    }
+
+    .sect-struct .line-cont2 {
+        align-items: start !important;
+        width: 100%;
+    }
+
+    .sect-struct .struct-wire {
+        width: 30% !important;
+    }
+
+    .triangle-cont .triangle {
+        top: -3.2rem;
+        right: 0%;
+    }
+
+    .sect-struct .plain-shape {
+        top: 14.5%;
+        left: -5%;
+        width: 22%;
+    }
+    .sect-start .start-text {
+        width: 50%;
+        font-size: 2.3rem;
+    }
+
+    .sect-start .curve2{
+        width: 20%;
+    }
+    .sect-start .dots2, .sect-start .spiral, .sect-start .curve1 {
+        width: 25% !important;
+    }
+    .sect-start .curve1 {
+        right: -3%;
+    }
+
+}
+
+/* small mobile */
+@media screen and (max-width: 576px) {
+    .navbar .logo {
+        width: 160px !important;
+    }
+
+    .thumb-btn a.text-btn {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .nav-item .thumb-btn {
+        margin-left: 0.6rem;
+        font-size: .8rem;
+    }
+
+    .thumb-btn .thumb-circle {
+        left: -35px;
+        top: -8px;
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .sect-hero .info {
+        font-size: medium;
+        width: 94% !important;
+    }
+
+    .sect-hero>div {
+        padding-bottom: 50px;
+    }
+
+    p.gain {
+        /* width: 94%; */
+        font-size: 1.7rem;
+        /* line-height: 110%; */
+    }
+
+    .line2 {
+        right: 22%;
+        bottom: -60px;
+    }
+
+    .btn-enroll {
+        padding: 0.5rem 1.2rem;
+    }
+
+    .coil-line {
+        right: 8%;
+        /* top: -16px; */
+        width: 25% !important;
+    }
+
+    .i4g-image {
+        width: 52% !important;
+    }
+
+    .sect-about .r-text,
+    .sect-about .l-text {
+        text-align: center;
+        font-size: 1.12rem;
+    }
+
+    .sect-services .dotsection {
+        width: 38% !important;
+    }
+
+    .sect-services .services-button {
+        padding: 0.4rem .7rem;
+    }
+
+    .services-button>p {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+    .triangle-cont .triangle {
+        top: -3rem;
+        right: 2%;
+        width: 40%;
+    }
+
+    .sect-struct .plain-shape {
+        top: 19.8%;
+        left: -5%;
+        width: 38%;
+    }
+
+    .sect-start .start-text {
+        width: 70%;
+        font-size: 2rem;
+    }
+    .custom-cont3, .struct-cont, .custom-cont2, .accordion-cont{
+        max-width: 94%;
+    }
+    
+
+}

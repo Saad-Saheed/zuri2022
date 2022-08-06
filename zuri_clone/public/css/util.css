@@ -1,0 +1,22 @@
+.light-dark{
+    color: #514949;
+}
+.danger{
+    color: #E7332B !important;
+}
+.bg-danger{
+    background-color: #E7332B !important;
+    color: #ffffff !important;
+}
+.rounded-pill {
+    border-radius: 2rem;
+}
+.thin-rule{
+    margin-top: 50px; 
+    margin-bottom: 0;
+    border: 0px thin #0000001f !important;
+}
+
+.blend-img{
+    mix-blend-mode: darken !important;
+}
