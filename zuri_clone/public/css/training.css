@@ -551,13 +551,13 @@ p.gain {
 }
 .sect-start .curve1{
     top: 0;
-    right: -1%;
+    right: 0%;
     width: 14%;
 }
 
 .sect-start .curve2{
     bottom: 0;
-    left: -1%;
+    left: 0;
     width: 10%;
 }
 .sect-start .dots2 {
@@ -765,13 +765,18 @@ p.gain {
     }
 
     .sect-start .curve2{
-        width: 20%;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 22%;
     }
     .sect-start .dots2, .sect-start .spiral, .sect-start .curve1 {
-        width: 25% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 28% !important;
     }
     .sect-start .curve1 {
-        right: -3%;
+        top: 0;
+        right: 0;
     }
 
 }
