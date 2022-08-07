@@ -50,8 +50,19 @@ body {
     background-color: #FFFDF5;
 }
 
-.navbar .nav-link {
+.navbar .nav-link, .modal-body, .modal{
     color: rgba(0, 0, 0, .8) !important;
+}
+.modal-content{
+    padding: 3.4rem;
+}
+.btn-close{
+    font-size: large;
+    opacity: 1 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E7332B'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+}
+.btn-close:focus{
+    box-shadow: unset !important;
 }
 
 .navbar .logo {
@@ -441,6 +452,7 @@ p.gain {
 }
 
 .sect-struct .boxes {
+    height: 850px;
     position: relative;
     color: #FFFFFF;
     background: #1b1a20 !important;
@@ -632,6 +644,9 @@ p.gain {
     .sect-services .dotsection {
         width: 18% !important;
     }
+    .sect-struct .boxes{
+        font-size: .8rem !important;
+    }
 
 }
 
@@ -734,6 +749,10 @@ p.gain {
 
     .sect-struct .struct-heading {
         margin-top: -10px;
+    }
+    .sect-struct .boxes {
+        height: auto;
+
     }
 
     .struct-cont {
