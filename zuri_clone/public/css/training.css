@@ -892,8 +892,8 @@ p.gain {
         font-size: 2rem;
     }
     .custom-cont3, .struct-cont, .custom-cont2, .accordion-cont{
-        overflow-x: hidden;
-        max-width: 94%;
+        overflow: hidden;
+        max-width: 94.4%;
     }
     
 
