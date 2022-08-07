@@ -527,7 +527,7 @@ p.gain {
 
 .triangle-cont .triangle {
     position: absolute;
-    top: -11.5rem;
+    top: -4.4rem;
     right: -4%;
     width: 16%;
 }
@@ -641,9 +641,19 @@ p.gain {
         line-height: 2.3rem;
     }
 
+    .sect-start {
+        margin-top: 35px !important;
+        padding-top: 25px !important;
+    }
+    
+
     .sect-services .dotsection {
         width: 18% !important;
     }
+    .sect-struct{
+        padding-bottom: 9rem !important;
+    }
+
     .sect-struct .boxes{
         font-size: .8rem !important;
     }
@@ -750,8 +760,10 @@ p.gain {
     .sect-struct .struct-heading {
         margin-top: -10px;
     }
+    
     .sect-struct .boxes {
         height: auto;
+        box-shadow: 0 15px 20px rgba(231, 51, 43, .2) !important
 
     }
 
@@ -777,6 +789,10 @@ p.gain {
         top: 14.5%;
         left: -5%;
         width: 22%;
+    }
+    .sect-start {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
     }
     .sect-start .start-text {
         width: 50%;
