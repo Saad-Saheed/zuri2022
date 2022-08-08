@@ -1,0 +1,80 @@
+@import url(./util.css);
+
+@font-face {
+    font-display: fallback;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Graphik-Regular.woff2) format("woff2");
+    unicode-range: U+0020-007f
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Graphik-Medium.woff2) format("woff2");
+    unicode-range: U+0020-007f
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Graphik-Semibold.woff2) format("woff2");
+    unicode-range: U+0020-007f
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Sequel Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/static/media/Sequel%20Sans%20Black%20Head.af6cda50d5e5d5fa7505.ttf) format("truetype")
+}
+
+body {
+    /* background-color: #FFFDF5; */
+    font-family: Graphik;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+.talent-cont{
+    max-width: 86.8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    z-index: 120;
+    background-color: #FFFFFF;
+    color: #161617;
+}
+
+.navbar .nav-link, .modal-body, .modal{
+    color: rgb(0, 0, 0) !important;
+}
+.nav-link{
+    font-weight: 400;
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+.nav-link.active{
+    border-bottom: 3px solid #E7332B;
+}
+.nav-link:hover{
+    background-color: #F6FAFD;
+}
+.btn:focus{
+    box-shadow: unset;
+}
+.btn{
+    border-radius: 0 0 8px 0;
+    padding: 0.5rem 2.3rem;
+}
