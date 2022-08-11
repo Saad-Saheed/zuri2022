@@ -36,45 +36,226 @@
 }
 
 body {
+    overflow-x: hidden;
     /* background-color: #FFFDF5; */
     font-family: Graphik;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
 }
-.talent-cont{
+
+.talent-cont {
     max-width: 86.8%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.sect-cont {
+    max-width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
+    padding-bottom: 1rem;
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     z-index: 120;
     background-color: #FFFFFF;
     color: #161617;
 }
 
-.navbar .nav-link, .modal-body, .modal{
+.navbar .nav-link,
+.modal-body,
+.modal {
     color: rgb(0, 0, 0) !important;
 }
-.nav-link{
+
+.nav-link {
     font-weight: 400;
     opacity: 1;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1rem;
 }
-.nav-link.active{
+
+.nav-link.active {
     border-bottom: 3px solid #E7332B;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     background-color: #F6FAFD;
 }
-.btn:focus{
+
+.btn:focus {
     box-shadow: unset;
 }
-.btn{
+
+.btn {
     border-radius: 0 0 8px 0;
-    padding: 0.5rem 2.3rem;
+    padding: 0.5rem 2.4rem;
+}
+
+.sect-one .btn {
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+.sect-one .btn:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+
+.sect-one {
+    padding-top: 7rem !important;
+    margin-top: 6.2rem !important;
+}
+
+.sect-one .action a {
+    font-weight: 400;
+}
+
+.sect-one .title {
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.sect-one .side-img {
+    z-index: 3;
+    width: 70%;
+}
+
+.sect-one .line1 img {
+    position: absolute;
+    top: -1.9rem;
+    right: 0.9rem;
+}
+
+.sect-one .line2 img {
+    width: 30%;
+    z-index: 1;
+    position: absolute;
+    top: -12rem;
+    right: -6rem;
+}
+.sect-one .modal-content{
+    padding: 4.375rem 2.75rem;
+    border: 1px solid #fff!important;
+    border-radius: .8rem !important;
+}
+
+.sect-one .or{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal-body p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.sect-one .text {
+    line-height: 120%;
+    color: #787878 !important;
+    font-size: 1.2rem;
+}
+
+.sect-two {
+    background-image: url(../images/bgsection2.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.sect-two .heading, .modal-header .modal-title{
+    margin-bottom: .2rem;
+    line-height: 49px;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.sect-two .heading .red{
+    color: rgb(231, 51, 43);
+}
+
+.sect-two .descriptions {
+    color: #787878 !important;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: inherit;
+    text-align: inherit;
+    width: 78%;
+}
+
+.country {
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    display: flex;
+    margin-right: 16px;
+    padding: .5rem !important;
+    width: 70px;
+}
+
+.sect-two .description-one {
+    color: #161617 !important;
+}
+
+.sect-two .sect-one-wrapper {
+    padding: 6rem 0;
+}
+
+.sect-two .side-img-cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sect-two .side-img-cont .side-img {
+    width: 70%;
+}
+
+.sect-two .country img {
+    width: 75%;
+    margin: auto;
+}
+
+
+
+
+/* medium desktop screen */
+@media screen and (max-width: 1200px) {
+
+    /*1070*/
+    .navbar .logo {
+        width: 225px;
+    }
+
+    .sect-one .line1 img {
+        position: absolute;
+        top: -6rem;
+        right: 1.8rem;
+    }
+
+}
+
+/* large mobile*/
+@media screen and (max-width: 767px) {
+
+    .navbar .logo {
+        width: 180px !important;
+    }
+
+    .btn {
+        padding: 0.5rem 1.2rem;
+    }
+
+}
+
+/* small mobile */
+@media screen and (max-width: 576px) {
+    .navbar .logo {
+        width: 150px !important;
+    }
+
+    .btn {
+        padding: 0.5rem .6rem;
+        font-size: .8rem;
+    }
+
 }

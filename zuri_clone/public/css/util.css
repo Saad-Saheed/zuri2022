@@ -20,3 +20,8 @@
 .blend-img{
     mix-blend-mode: darken !important;
 }
+
+.bg-dark{
+    background-color: #585858 !important;
+    color: #FFFFFF !important;
+}

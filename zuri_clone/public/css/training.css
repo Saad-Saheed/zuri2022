@@ -581,6 +581,7 @@ p.gain {
     color: #1b1a20 !important;
     font-size: 1rem;
 }
+
 /* medium desktop screen */
 @media screen and (max-width: 1200px) {
 
