@@ -244,12 +244,15 @@ body {
 
     .sect-one .line1 img {
         position: absolute;
-        top: -6rem;
-        right: 1.8rem;
+        top: -2rem;
+        right: 160px;
     }
 
     .sect-one .side-img-cont{
         justify-content: center !important;
+    }
+    .sect-one .text {
+        font-size: 1.26rem;
     }
 
     .sect-two .side-img-cont{
@@ -272,26 +275,39 @@ body {
         font-size: 1.9rem;
         font-weight: 800;
     }
-
     .sect-two .heading, .sect-two .descriptions{
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        justify-content: center;
-        /* width: 100% !important; */
+        width: 100%;
     }
+
+    
+    .sect-two .side-img-cont .side-img {
+        width: 80%;
+    }
+   
 }
+
+/* tablet */
+@media screen and (max-width: 1000px) {
+   
+}
+
+
 
 /* large mobile*/
 @media screen and (max-width: 767px) {
 
+    .sect-one .line1 img {
+        top: -2.5rem;
+        right: 2rem;
+    }
+
+   
     .sect-two .country img {
         width: 100%;
     }
     .action{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: nowrap;
     }
     .navbar .logo {
@@ -303,11 +319,11 @@ body {
     }
 
     .sect-one {
-        padding-top: 7rem !important;
-        margin-top: 6.2rem !important;
+        padding-top: 5rem !important;
+        margin-top: 4rem !important;
     }
 
-    .btn {
+    .nav-item .btn {
         padding: 0.6rem 2.1rem;
         line-height: 24px;
         font-weight: 400;        
@@ -315,36 +331,69 @@ body {
         font-size: 1.3rem;
     }
 
+    .sect-two .heading, .sect-two .descriptions{
+        color: #161617!important;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .sect-two .heading{
-        line-height: 30px;
-        font-size: 1.4rem;
+        line-height: 50px;
+        font-size: 2rem;
         font-weight: 800;
     }
 
-    .sect-two .heading, .sect-two .descriptions{
-        text-align: left;
-        justify-content: flex-start;
-        /* width: 100% !important; */
+    .sect-two .descriptions{
+    font-size: 1.5rem;
     }
+
+    
 
 }
 
 /* small mobile */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
+
+    .sect-one .line1 img {
+        top: -2rem;
+        right: 0rem;
+    }
+    .sect-one .title {
+        font-size: 2.2rem;
+    }
+    .sect-two .side-img-cont .side-img {
+        width: 100%;
+    }
     .sect-two .heading, .sect-two .descriptions{
         width: 100%;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .sect-two .heading{
+        line-height: 30px;
+        font-size: 1.8rem;
+    }
 
+    .sect-two .descriptions{
+        font-size: 1rem;
     }
     .navbar .logo {
         width: 170px !important;
     }
 
+    .btn {
+        border-radius: 0 0 8px 0;
+        padding: 0.5rem .8rem;
+    }    
     .header{padding-top: 0;}
     .navbar ul.nav-cont{margin: 0 !important;}
 
-    .btn {
+    .nav-item .btn {
         text-align: center;
-        padding: .6rem 2.7rem;
+        padding: .4rem 2.1rem;
         line-height: 24px;
         font-weight: 400;        
         font-size: 1.3rem;
