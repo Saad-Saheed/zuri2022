@@ -161,14 +161,14 @@ body {
     background-size: cover !important;
 }
 
-.sect-two .heading, .sect-three .heading, .modal-header .modal-title{
+.sect-two .heading, .sect-three .heading,.sect-four .heading, .modal-header .modal-title{
     margin-bottom: .2rem;
     line-height: 49px;
     font-size: 2.5rem;
     font-weight: 800;
 }
 
-.sect-two .heading .red{
+.heading .red{
     color: rgb(231, 51, 43);
 }
 
@@ -254,7 +254,37 @@ body {
     transform: translateY(-15px);    
 }
 
+.sect-four .why-box{
+    height: 280px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3.75rem 2rem;
+    color: #787878 !important;
+    background-color: #FFFFFF;
+    border-bottom-right-radius: 1rem;
+}
 
+.sect-four .why-box:hover{
+    color: #FFFFFF !important;
+    background-color: #161617;
+}
+
+.sect-four .why-text{
+    font-size: 1.1rem;
+}
+
+.sect-four .row > div{
+    z-index: 50 !important;
+}
+.sect-four .line{
+    z-index: -1 !important;
+    left: 0;
+    top: 49%;
+    position: absolute;
+}
 
 
 /* medium desktop screen */
@@ -264,6 +294,10 @@ body {
         flex-basis: 25%;
         max-width: 25%;
     }  
+
+    .sect-four .line{   
+        top: 39%;
+    }
 
     .sect-three .tracks, .sect-three .clients{  
         margin-bottom: 0 !important;    
@@ -462,6 +496,12 @@ body {
         line-height: 24px;
         font-weight: 400;        
         font-size: 1.3rem;
+    }
+    .sect-four .why-box{
+        height: auto !important;
+    }
+    .sect-four .why-text{
+        font-size: 0.99rem;
     }
 }
 
