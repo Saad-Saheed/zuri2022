@@ -161,7 +161,7 @@ body {
     background-size: cover !important;
 }
 
-.sect-two .heading, .modal-header .modal-title{
+.sect-two .heading, .sect-three .heading, .modal-header .modal-title{
     margin-bottom: .2rem;
     line-height: 49px;
     font-size: 2.5rem;
@@ -219,12 +219,57 @@ body {
     justify-content: flex-start;
 }
 
+.sect-three{
+    padding-bottom: 3rem;
+}
+
+.sect-three .track-box, .sect-three .client-box{
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+.sect-three .track-box-cont, .sect-three .client-box-cont{
+    margin-left: -24px !important;
+    margin-top: -24px !important;
+}
+
+.sect-three .tracks, .sect-three .clients{
+    cursor:default;
+    align-items: center;
+    background: #fff!important;
+    border-radius: 8px!important;
+    box-shadow: 0 8px 30px rgba(122, 122, 122, 0.161)!important;
+    color: #787878!important;
+    display: flex;
+    font-size: 1.1rem !important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    justify-content: center;
+    line-height: 33px!important;
+    padding: .6rem 1.5rem!important;
+    text-align: center;
+    transition: transform .3s ease, -webkit-transform .3s ease !important;
+}
+.sect-three .tracks:hover, .sect-three .clients:hover{
+    transform: translateY(-15px);    
+}
 
 
 
 
 /* medium desktop screen */
 @media screen and (max-width: 1200px) {
+
+    .sect-three .track-box, .sect-three .client-box{
+        flex-basis: 25%;
+        max-width: 25%;
+    }  
+
+    .sect-three .tracks, .sect-three .clients{  
+        margin-bottom: 0 !important;    
+        font-size: 1rem !important;
+        padding: 0.6rem 0.4rem !important;
+    }
 
     .sect-two .country img {
         width: 85%;
@@ -270,7 +315,7 @@ body {
     }
 
 
-    .sect-two .heading{
+    .sect-two .heading, .sect-three .heading{
         line-height: 40px;
         font-size: 1.9rem;
         font-weight: 800;
@@ -278,20 +323,15 @@ body {
     .sect-two .heading, .sect-two .descriptions{
         width: 100%;
     }
-
     
     .sect-two .side-img-cont .side-img {
         width: 80%;
     }
    
+    .sect-three .tracks, .sect-three .clients{
+        height: 100%;
+    }
 }
-
-/* tablet */
-@media screen and (max-width: 1000px) {
-   
-}
-
-
 
 /* large mobile*/
 @media screen and (max-width: 767px) {
@@ -340,26 +380,54 @@ body {
         margin-right: auto;
     }
 
-    .sect-two .heading{
+    .sect-two .heading, .sect-three .heading{
         line-height: 50px;
         font-size: 2rem;
         font-weight: 800;
     }
+    .sect-three .heading{text-align: center};
 
     .sect-two .descriptions{
-    font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-
-    
+    .sect-three .tracks, .sect-three .clients{  
+        margin-bottom: 0 !important;    
+        font-size: 1.1rem !important;
+        padding: 0.6rem!important;
+    }
+    .sect-three .track-box, .sect-three .client-box{
+        flex-basis: 33%;
+        max-width: 33%;
+    }  
 
 }
 
 /* small mobile */
 @media screen and (max-width: 600px) {
 
+    .sect-three .track-box, .sect-three .client-box{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+    .sect-three .track-box-cont, .sect-three .client-box-cont{
+        margin-left: -20px !important;
+        margin-top: -20px !important;
+    }
+
+    .sect-three .track-box, .sect-three .client-box{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .sect-three .tracks, .sect-three .clients{  
+        margin-bottom: 0 !important;    
+        font-size: 0.99rem !important;
+        padding: 0.6rem!important;
+    }
+
     .sect-one .line1 img {
         top: -2rem;
-        right: 0rem;
+        right: -.4rem;
     }
     .sect-one .title {
         font-size: 2.2rem;
@@ -372,7 +440,7 @@ body {
         text-align: left;
         justify-content: flex-start;
     }
-    .sect-two .heading{
+    .sect-two .heading, .sect-three .heading{
         line-height: 30px;
         font-size: 1.8rem;
     }
@@ -385,17 +453,29 @@ body {
     }
 
     .btn {
-        border-radius: 0 0 8px 0;
         padding: 0.5rem .8rem;
-    }    
-    .header{padding-top: 0;}
-    .navbar ul.nav-cont{margin: 0 !important;}
+    }
 
     .nav-item .btn {
         text-align: center;
-        padding: .4rem 2.1rem;
+        padding: .6rem 2.1rem;
         line-height: 24px;
         font-weight: 400;        
         font-size: 1.3rem;
     }
+}
+
+/* very small mobile device */
+@media screen and (max-width: 375px) {
+    .navbar .logo {
+        width: 140px !important;
+    }
+    .action{
+        justify-content: space-between;
+    }
+    .btn {
+        padding: .6rem 1rem;
+    }
+    .header{padding-top: 0;}
+    .navbar ul.nav-cont{margin: 0 !important;}
 }
