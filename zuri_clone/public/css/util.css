@@ -25,3 +25,23 @@
     background-color: #585858 !important;
     color: #FFFFFF !important;
 }
+
+.git_link {
+    z-index: 190;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+    color: hsl(0, 0%, 95%);
+    background-color: #E7332B;
+    top: 40vh;
+    right: 15px;      
+    box-shadow: 0 0 .3em #FFFAFA;     
+}
+
+.git_link:hover{
+    color: #FFFFFF;
+}
