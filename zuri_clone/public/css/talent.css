@@ -286,6 +286,9 @@ body {
     position: absolute;
 }
 
+.footer{
+    color: #FFFFFF;
+}
 
 /* medium desktop screen */
 @media screen and (max-width: 1200px) {
@@ -434,6 +437,10 @@ body {
         max-width: 33%;
     }  
 
+    .footer-text{
+        text-align: center;
+    }
+
 }
 
 /* small mobile */
@@ -503,6 +510,8 @@ body {
     .sect-four .why-text{
         font-size: 0.99rem;
     }
+
+    
 }
 
 /* very small mobile device */
